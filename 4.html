@@ -4,6 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F95690;
+        width: 110%;
+        height: 10vh;
+      }
+
+      nav{
+        background-color: black;
+        width: 100%;
+        height: 10vh;
+        padding: 10px;
+      }
+      nav ul {
+        display: flex;
+        justify-content: flex-end;
+        padding:0; 
+       } 
+
+      nav ul li {
+      margin-right: 20px; /* 각 메뉴 아이템 간의 간격 설정 */
+      }
+      nav ul li a {
+       color: white;
+      }
+
+
+      section{
+        flex: 1;
+        background-color:red;
+        padding:20px;
+        width: 100%;
+        height: 50vh;
+      }
+      .special-section{
+        flex: 1;
+        background-color: bisque;
+        width: 100%;
+        height: 50vh;
+        text-align: left;
+        padding: 20px;
+      }
+
+      footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align:center;
+        background-color: #FCEEF3;
+        width: 100%;
+        height: 10vh;
+        padding: 10px;
+      }
+      .login-form {
+       display: flex;
+       flex-direction: column; /* 아이디와 비밀번호 입력 칸을 세로로 정렬 */
+       align-items: left;
+       }  
+
+      .login-form input {
+      display: flex;
+      flex-direction: column; /* 아이디와 비밀번호 입력 칸을 세로로 정렬 */
+      align-items: left;
+      margin-bottom: 10px;
+      width: 10%;
+      padding: 5px;
+      font-size: 15px;
+      }
+
+
+
+
+  </style>
   </head>
   <body>
     <header>*** 블로그 입니다</header>
@@ -16,12 +92,14 @@
     </nav>
     <article>
       <section>
-        <form action="">
-          <input type="text" placeholder="아이디" />
-          <input type="password" placeholder="비밀번호" />
-        </form>
+        <div class="login-form">
+          <form action="">
+            <input type="text" placeholder="아이디" />
+            <input type="password" placeholder="비밀번호" />
+          </form>
+        </div>
       </section>
-      <section>
+      <section class="special-section">
         <h2>안녕하세요!</h2>
         <p>HTML 실습 과제입니다.</p>
       </section>
